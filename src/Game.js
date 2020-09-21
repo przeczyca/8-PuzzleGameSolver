@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Tile from './Tile'
 import solve from "./Solver"
+import "./styles.css"
 
 class Game extends React.Component {
     constructor(props){
@@ -60,7 +61,7 @@ class Game extends React.Component {
     
     render(){
         return (
-            <div>
+            <div className = "gameStyle">
                 <Tile value={this.state.gameState[0][0]} index={[0,0]} game={this}/>
                 <Tile value={this.state.gameState[0][1]} index={[0,1]} game={this}/>
                 <Tile value={this.state.gameState[0][2]} index={[0,2]} game={this}/>
@@ -76,7 +77,7 @@ class Game extends React.Component {
                 <Tile value={this.state.gameState[2][2]} index={[2,2]} game={this}/>
                 <hr></hr>
                 
-                <Button variant="outline-primary" size="lg" onClick={() => this.setState({solution: solve(this.state.gameState,"best")})}>Solve</Button>
+                <Button variant="primary" size="lg" onClick={() => this.setState({solution: solve(this.state.gameState,"best")})}>Solve</Button>
                 <br></br>
                 <h3>
                     {this.state.solution}

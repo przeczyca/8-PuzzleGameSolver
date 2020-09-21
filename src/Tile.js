@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Tile(props) {
     return (
-        <Button variant="outline-primary" size="lg" onClick={() => props.game.makeMove(props.index)}>{props.value}</Button>
+        <Button variant="primary" size="lg" onClick={() => props.game.makeMove(props.index)}>{props.value}</Button>
     )
 }
 
