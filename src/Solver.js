@@ -59,7 +59,7 @@ function getDirections(treeNode){
         path.push(node.getMoveToParent())
         node = node.parent
     }
-    return path
+    return path.reverse()
 }
 
 function myToString(gameState){
