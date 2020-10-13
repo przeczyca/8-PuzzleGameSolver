@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Tile from './Tile'
 import solve from "./Solver"
-import "./styles.css"
+import "../../styles.css"
 
 class Game extends React.Component {
     constructor(props){
