@@ -2,7 +2,7 @@ import React from 'react';
 //import Game from './pages/8-puzzle/Game'
 import NavBar from "./NavBar"
 
-import {HashRouter as Router, Route, Switch, Link, Redirect} from "react-router-dom"
+import {BrowserRouter as Router, Route, Switch, Link, Redirect} from "react-router-dom"
 
 import Puzzle from "./pages/8-puzzle"
 import CurrencyConverter from "./pages/curConverter"
