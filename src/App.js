@@ -14,9 +14,9 @@ function App() {
             <NavBar />
             <Router>
                 <Switch>
-                    <Route exact path="/home" component={Home} />
-                    <Route exact path="/8-Puzzle" component={Puzzle} />
-                    <Route exact path="/CurrencyConverter" component={CurrencyConverter} />
+                    <Route path="/home" component={Home} />
+                    <Route path="/8-Puzzle" component={Puzzle} />
+                    <Route path="/CurrencyConverter" component={CurrencyConverter} />
                     <Redirect path="/" to="/home" />
                 </Switch>
             </Router>
