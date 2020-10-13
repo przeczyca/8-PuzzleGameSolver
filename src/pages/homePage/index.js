@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 
 const Home = () => {
     return(
-        <h1>Home</h1>
+        <div className = "gameStyle">
+            <h1>React app with an 8-puzzle solver and currency converter</h1>
+        </div>
     )
 }
 
